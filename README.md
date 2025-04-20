@@ -47,11 +47,22 @@ The `qr_code_scanner.py` uses the OpenCV 4.11 library to read in and process the
 pip install opencv-python
 ```  
 
-### References
+#### OpenCV References
 - [PyPI](https://pypi.org/project/opencv-python/)
 - [Github](https://github.com/opencv/opencv-python)
-- [Documentation](https://docs.opencv.org/4.5.4/index.html)
+- [Documentation](https://docs.opencv.org/4.5.4/index.html)  
+  
+### Pytest 8.3.5
+The `tests` folder contains unit tests for QR codes with different image sizes and amount of error correction. The `/tests/data/` folder contain the input images used for the tests. These tests use the pytest framework, which can be installed with pip using the following command:
+```console
+pip install pytest
+```
+#### Pytest References
+- [PyPI](https://pypi.org/project/pytest/)
+- [Github](https://github.com/pytest-dev/pytest)
+- [Documentation](https://docs.pytest.org/en/stable/) 
 
+<br>
 
 
 <a name="usage-heading"></a>
