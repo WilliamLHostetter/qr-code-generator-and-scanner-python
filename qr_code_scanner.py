@@ -11,7 +11,7 @@ import cv2
 
 
 
-def scan_qr_code(image_filepath):
+def scan_qr_code(image_filepath: str) -> str:
     try:
         # reading the image file with cv2 
         qr_img = cv2.imread(f"{image_filepath}")  
@@ -27,7 +27,8 @@ def scan_qr_code(image_filepath):
         return None
 
     
-def get_image(input_window, image_frame, file_entry):
+def get_image(input_window: tk.Tk, image_frame: tk.Frame, file_entry: tk.ttk.Entry) -> None:
+
     image_filepath = filedialog.askopenfilename(initialdir=os.getcwd())
     print("image_filepath =", image_filepath)
     

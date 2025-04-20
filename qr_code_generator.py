@@ -23,7 +23,7 @@ error_correction_menu_default = "L: About 7% or less errors can be corrected."
 def generate_qr_code_image(text: str, 
                             image_size_selection: str, 
                             error_correction_selection: str, 
-                            output_filename: str) -> None:
+                            output_filename: str) -> tk.PhotoImage:
     
     if image_size_selection == image_size_list[0]: # Small (120x120)
         image_size = 120
